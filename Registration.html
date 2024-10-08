@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<style>
+    body{
+        font-family:Arial, Helvetica, sans-serif ;
+        background: color #f4f4f4; 
+        margin: 0;
+        padding: 0;
+        display:flex ;
+        justify-content: centre;
+        align-items: centre;
+        height: 100vh;
+    
+    }
+    .container{
+        background-color:burlywood;
+        padding: 20px 40px;
+        border-radius:10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+        max-width: 500px;
+        width:100% ;
+    }
+    h2{
+        text-align:center ;
+        color:#333 ;
+        margin-bottom: 20px;
+
+    }
+    .form-group{
+        margin-bottom: 15px;
+    }
+    label{
+        font-weight:bold;
+        display: block;
+        margin-bottom:5px ;
+    }
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    input[type="password"],
+    select{
+        width: 100%;
+        padding:10px ;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    input[type="radio"]{
+        margin-right:10px;
+    }
+    .form-group.gender{
+        display: flex;
+        align-items:centre;
+    }
+    .form-group.gender{
+        margin-right:10px;
+    }
+    input[type="submit"]{
+        background-color: #4CAF50;
+        color:white ;
+        padding: 10px;
+        border: none;
+        border-radius:5px;
+        cursor: pointer;
+        width: 100px;
+    }
+    input[type="submit"]:hover{
+        background-color: #45a049;
+    }
+    .form-footer{
+        text-align: center;
+        margin-top: 20px;
+        font-size: 0.9em;
+    }
+    .form-footer a{
+        color: #4CAF50;
+        text-decoration: none;
+    }
+
+</style>
+</head>
+  <body>
+    <div class="container">
+        <h2>Student Registration Form</h2>
+        <form action="#"
+        method="POST">
+    <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type"text"id="name"name="name"placeholder="Enter your full name"required>
+    </div>
+    <div class="form-group gender">
+        <label>Gender</label>
+        <label><input type="radio" name="gender" value="female" required>Female</label>
+        <label><input type="radio" name="gender" value="male" required>Male</label>
+        <label><input type="radio" name="gender" value="other" required>other</label>
+    </div>
+<div class="form-group">
+    <label for="age">Age</label>
+    <input type=""number" id="age" name="age" placeholder="Enter your age" required min="18" max="100">
+</div>
+<div class="form-group">
+    <label for="course">Course</label>
+    <select id="course" nam="course" required>
+        <option value="" disabled selected>Select your course</option>
+        <option value="information technology">Information Technology</option>
+        <option value="Computer technology">Computer Technology</option>
+        <option value="information system">Information System</option>
+        <option value="information communication technology">Information  Communication TechnologyTechnology</option>
+    </select>
+    </div>
+    <div class="form-group">
+        <label for="department">Department</label>
+        <select id="department" name="department" required>
+            <option value="" disabled selected>Select your department</option>
+            <option value="school-of-computing">School of Computing</option>
+            <option value="school-of-education">School of Education</option>
+            <option value="school-of-engineering">School of Enginering</option>
+            <option value="school-of-medicine">School of Medicine</option>
+        </select>
+    </div>
+    <input type="submit" value="Register">
+    </form>
+    <div class="form-footer">
+        Already registered? <a href="#">Login here</a>
+    </div>
+</div>
+</body>
+</html>
+
